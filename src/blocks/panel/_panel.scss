@@ -1,9 +1,13 @@
 .panel {
     background-color: #333333;
+    // background-image: url(/dist/img/panel-background-full.png);
+    // background-position: top;
+    // background-repeat: no-repeat;
 
     &__icon {
-        padding-bottom: 30px;
-        padding-top: 100px;
+        margin-bottom: 22px;
+        padding-top: 94px;
+
     }
 
     &__icon--search {
@@ -24,6 +28,7 @@
         font-size: 36px;
         font-weight: 400;
         padding-bottom: 120px;
+        pointer-events: none;
     }
 
 

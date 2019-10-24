@@ -19,8 +19,13 @@
     }
 
     &--panel {
-        width: 57px;
-        height: 57px;
+        width: 72px;
+        height: 72px;
+
+        &:hover {
+            fill: white;
+            fill-opacity: 1;
+        }
     }
 
 }

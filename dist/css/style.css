@@ -3293,6 +3293,21 @@ body {
   font-weight: 400;
   cursor: pointer; }
 
+.footer {
+  background-color: #232323; }
+  .footer__wrapper {
+    padding-top: 120px; }
+  .footer__inner {
+    padding-bottom: 50px; }
+  .footer__subtitle {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400; }
+  .footer__icons {
+    max-width: 160px;
+    width: 100%; }
+
 .header {
   background-image: url(/dist/img/header-background.png);
   background-position: top;
@@ -3353,8 +3368,11 @@ body {
     width: 25px;
     height: 25px; }
   .icons--panel {
-    width: 57px;
-    height: 57px; }
+    width: 72px;
+    height: 72px; }
+    .icons--panel:hover {
+      fill: white;
+      fill-opacity: 1; }
 
 .nav {
   background-color: #5474fd;
@@ -3373,8 +3391,8 @@ body {
 .panel {
   background-color: #333333; }
   .panel__icon {
-    padding-bottom: 30px;
-    padding-top: 100px; }
+    margin-bottom: 22px;
+    padding-top: 94px; }
   .panel__icon--search {
     color: #5474fd; }
   .panel__icon--check {
@@ -3386,7 +3404,8 @@ body {
     font-family: 'Aleo', serif;
     font-size: 36px;
     font-weight: 400;
-    padding-bottom: 120px; }
+    padding-bottom: 120px;
+    pointer-events: none; }
 
 .section-one {
   background-image: url(/dist/img/section-1-background.png);
@@ -3441,3 +3460,31 @@ body {
     color: #e8e8e8;
     font-size: 16px;
     padding-bottom: 80px; }
+
+.testimonials {
+  background-image: url(/dist/img/testimonials-background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 121px;
+  padding-bottom: 200px; }
+  .testimonials__title {
+    text-align: center;
+    color: white;
+    font-family: 'Aleo', serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 100px; }
+  .testimonials__img {
+    width: 100%; }
+  .testimonials__text {
+    background-color: #333;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400; }
+  .testimonials__text-heading {
+    color: #fefefe;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .testimonials__text-paragraph {
+    color: #e8e8e8;
+    font-size: 16px; }

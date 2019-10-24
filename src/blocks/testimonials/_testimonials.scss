@@ -1,0 +1,39 @@
+.testimonials {
+    background-image: url(/dist/img/testimonials-background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 121px;
+    padding-bottom: 200px;
+
+    &__title {
+        text-align: center;
+        color: white;
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 100px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__text {
+        background-color: #333;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    &__text-heading {
+        color: #fefefe;
+        font-size: 20px; 
+        text-transform: uppercase;
+    }
+
+    &__text-paragraph {
+        color: #e8e8e8;
+        font-size: 16px;
+    }
+
+}
