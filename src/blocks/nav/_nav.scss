@@ -1,0 +1,20 @@
+.nav {
+    background-color: #5474fd;
+    color: white;
+
+    &__wrapper {
+        padding: 30px 0px;
+    }
+
+    &__list {
+        list-style: none;
+        min-width: 540px;
+    }
+
+    &__item {
+        font-family: 'Aleo', serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}

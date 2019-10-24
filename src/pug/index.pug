@@ -1,4 +1,14 @@
+include ../blocks/page/_page.pug
+include ../pug/icons.svg
+include ../blocks/header/_header.pug
 include ../blocks/nav/_nav.pug
+include ../blocks/about/_about.pug
+include ../blocks/panel/_panel.pug
+include ../blocks/section-one/_section-one.pug
+include ../blocks/section-two/_section-two.pug
+include ../blocks/testimonials/_testimonials.pug
+include ../blocks/footer/_footer.pug
+include ../blocks/btn/_btn.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -6,10 +16,20 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
+        meta(description="Travelling website designed to...")
+        title Travel More 
         link(rel="stylesheet", href="./css/style.css")
     body
-        .container
-            .row
-                .col-4
-                    +nav
+        +page
+            //- +nav
+            //- +about
+            //- +panel
+            //- +section-one
+            //- +section-two
+            //- +testimonials
+            //- +footer
+
+        
+    script(src='https://kit.fontawesome.com/f811e9d5c2.js' crossorigin='anonymous')
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="./plugins/jquery.mask.min.js")

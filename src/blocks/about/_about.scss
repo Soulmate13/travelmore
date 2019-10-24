@@ -1,0 +1,35 @@
+.about {
+    background-image: url(/dist/img/about-background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        padding-top: 85px;
+        margin-bottom: 70px;
+        color: white;
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: 'Josefin Sans', sans-serif;
+        color: #e8e8e8;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__paragraph:first-child {
+        margin-bottom: 40px;
+    }
+
+    &__paragraph:last-child {
+        margin-bottom: 70px;
+    }
+}

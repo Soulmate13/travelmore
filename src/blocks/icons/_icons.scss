@@ -1,0 +1,26 @@
+.icons {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+
+    &--header {
+        color: white;
+        width: 25px;
+        height: 25px;
+    }
+
+    &--nav {
+        color: white;
+        width: 25px;
+        height: 25px;
+    }
+
+    &--panel {
+        width: 57px;
+        height: 57px;
+    }
+
+}

@@ -1,0 +1,30 @@
+.panel {
+    background-color: #333333;
+
+    &__icon {
+        padding-bottom: 30px;
+        padding-top: 100px;
+    }
+
+    &__icon--search {
+        color: #5474fd;
+    }
+
+    &__icon--check {
+        color: #ff6363;
+    }
+
+    &__icon--like {
+        color: #00a2ff;
+    }
+
+    &__title {
+        color: #e8e8e8;
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+        font-weight: 400;
+        padding-bottom: 120px;
+    }
+
+
+}
