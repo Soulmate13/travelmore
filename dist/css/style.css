@@ -3315,7 +3315,8 @@ body {
     padding-bottom: 18px;
     padding-right: 50px;
     padding-left: 32px;
-    border: none; }
+    border: none;
+    letter-spacing: -0.3px; }
     .btn--header:hover {
       background-color: #ff6363; }
   .btn--about:hover {
@@ -3373,9 +3374,10 @@ body {
       display: block; }
 
 .header {
+  background-image: url(/dist/img/header-background.png);
   background-position: top;
-  background-image: url(/dist/img/header-background-full.png);
   background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Josefin Sans', sans-serif;
   color: white; }
   .header__top {
@@ -3398,7 +3400,7 @@ body {
     width: 100%;
     height: 100%;
     border: solid white 2px;
-    margin-bottom: 120px;
+    margin-bottom: 94px;
     margin-left: 39px; }
   .header__form {
     max-width: 650px;
@@ -3411,7 +3413,11 @@ body {
     right: 70px;
     pointer-events: none; }
   .header__input {
-    color: #999; }
+    color: #999;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400; }
   .header__link {
     text-decoration: none;
     color: white;
