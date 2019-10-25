@@ -1,8 +1,9 @@
 .about {
     background-image: url(/dist/img/about-background.png);
+    background-size: cover;
+    // background-image: url(/dist/img/about-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
 
     &__wrapper {
         padding-top: 120px;
@@ -10,8 +11,8 @@
     }
 
     &__title {
-        padding-top: 85px;
-        margin-bottom: 70px;
+        padding-top: 82px;
+        margin-bottom: 58px;
         color: white;
         font-family: 'Aleo', serif;
         font-size: 36px;
@@ -23,13 +24,35 @@
         color: #e8e8e8;
         font-size: 16px;
         font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 25px;
     }
 
     &__paragraph:first-child {
-        margin-bottom: 40px;
+        margin-bottom: 29px;
     }
 
     &__paragraph:last-child {
-        margin-bottom: 70px;
+        margin-bottom: 65px;
+    }
+
+    &__image {
+        width: 97%;
+    }
+
+    &__image--bottom {
+        margin-left: 10px;
+
+        @media screen and (max-width: 1199px) {
+            margin-left: 0;
+        }
+    }
+
+    &__image--top {
+        margin-left: 21px;
+
+        @media screen and (max-width: 1199px) {
+            margin-left: 0;
+        }
     }
 }

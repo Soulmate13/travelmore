@@ -1,9 +1,10 @@
 .testimonials {
     background-image: url(/dist/img/testimonials-background.png);
+    // background-image: url(/dist/img/testimonials-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 121px;
+    padding-top: 118px;
     padding-bottom: 200px;
 
     &__title {
@@ -12,28 +13,53 @@
         font-family: 'Aleo', serif;
         font-size: 36px;
         font-weight: 400;
-        margin-bottom: 100px;
+        margin-bottom: 93px;
+        letter-spacing: 0.4px;
     }
 
     &__img {
-        width: 100%;
+        max-width: 100%;
     }
 
     &__text {
+        padding-top: 51px;
         background-color: #333;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
+        padding-left: 42px;
+        padding-right: 31px;
+        padding-bottom: 46px;
     }
+
 
     &__text-heading {
         color: #fefefe;
         font-size: 20px; 
         text-transform: uppercase;
+        letter-spacing: -0.9px;
+        margin-bottom: 30px;
     }
 
     &__text-paragraph {
         color: #e8e8e8;
         font-size: 16px;
+        line-height: 25px;
+        letter-spacing: -0.8px;
+        padding-left: 1px;
+        margin-top: -4px;
+
+        &::before {
+            content: "";
+            padding-left: 30px;
+        }
     }
+
+    &__text > i.fa-quote-left {
+        color: #5474fd;
+        float: left;
+        padding-left: 2px;
+        font-size: 16px;
+}       padding-right: 10px;
+    
 
 }

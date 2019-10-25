@@ -1,5 +1,6 @@
 .section-one {
     background-image: url(/dist/img/section-1-background.png);
+    // background-image: url(/dist/img/section-1-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +12,9 @@
         background-color: #232323;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        padding-bottom: 30px;
+        padding-bottom: 69px;
+        padding-left: 29px;
+        padding-top: 50px;
     }
 
     &__title {
@@ -24,12 +27,16 @@
         color: white;
         text-transform: uppercase;
         font-size: 20px;
-        padding-bottom: 30px;
+        padding-bottom: 21px;
+        letter-spacing: -0.9px;
     }
 
     &__paragraph {
         color: #e8e8e8;
         font-size: 16px;
-        padding-bottom: 80px;
+        margin-bottom: 64px;
+        letter-spacing: -1px;
+        line-height: 26px;
+        
     }
 }

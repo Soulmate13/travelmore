@@ -5,10 +5,15 @@ mixin nav
                 .col-12
                     .nav__wrapper.d-flex.justify-content-between
                         a.nav__link(href="#")
-                            img.nav__logo(src="../../dist/img/logo.png", alt="bhromaon logo")
+                            img.nav__logo(src="../../dist/img/logo.png" alt="bhromaon white logo")
+                            img.nav__logo--alt(src="../../dist/img/logo-grey.png" alt="bhromaon grey logo")
                         ul.nav__list.d-flex.justify-content-between.align-items-center
-                            li.nav__item Who We Are
-                            li.nav__item What We Do
-                            li.nav__item Travel With Us
-                            li.nav__item Contact Us
+                            li.nav__item
+                                a.nav__item-link(href='#about') Who We Are
+                            li.nav__item
+                                a.nav__item-link(href='#panel') What We Do
+                            li.nav__item
+                                a.nav__item-link(href='#section-one') Travel With Us
+                            li.nav__item 
+                                a.nav__item-link(href='#footer') Contact Us
             

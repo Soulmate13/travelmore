@@ -3,12 +3,46 @@
     text-decoration: none;
     background-color: #5474fd;
     white-space: nowrap;
-    padding: 20px 44px;
+    padding: 23px 39px;
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    letter-spacing: 1.2px;
 
-    // &--about {
-        
-    // }
+    &--header {
+        padding-top: 19px;
+        padding-bottom: 18px;
+        padding-right: 50px;
+        padding-left: 32px;
+        border: none;
+
+        &:hover {
+            background-color: #ff6363;
+        }
+
+    }
+
+    &--about:hover {
+        background-color: #ff6363;
+    }
+
+    &--section-one {
+        padding: 22px 62px;
+        letter-spacing: 0.7px;
+        line-height: 19px;
+
+        &:hover {
+            background-color: #ff6363;
+        }
+    }
+
+    &--section-two {
+        padding: 22px 62px;
+        letter-spacing: 0.7px;
+        line-height: 19px;
+
+        &:hover {
+            background-color: #ff6363;
+        }
+    }
 }
