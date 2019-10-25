@@ -7,6 +7,21 @@
     padding-top: 229px;
     padding-bottom: 100px;
 
+    @media screen and (max-width: 991px) {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    @media screen and (max-width: 765px) {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    @media screen and (max-width: 575px) {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
     &__item {
         opacity: 0.9;
         background-color: #232323;
@@ -15,6 +30,15 @@
         padding-bottom: 69px;
         padding-left: 29px;
         padding-top: 50px;
+
+        @media screen and (max-width: 991px) {
+            padding-right: 26px;
+        }
+
+        &:hover {
+            opacity: 1;
+            transition: ease .3s;
+        }
     }
 
     &__title {

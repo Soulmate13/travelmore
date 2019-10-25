@@ -7,6 +7,18 @@
 
     &__item {
         padding-top: 95px;
+
+        @media screen and (max-width: 991px) {
+            padding-top: 40px;
+        }
+    
+        @media screen and (max-width: 765px) {
+            padding-top: 30px; 
+        }
+    
+        @media screen and (max-width: 575px) {
+            padding-top: 20px;
+        }
     }
 
     &__icon {
@@ -32,6 +44,19 @@
         font-weight: 400;
         padding-bottom: 112px;
         pointer-events: none;
+
+        
+        @media screen and (max-width: 991px) {
+            padding-bottom: 56px;
+        }
+
+        @media screen and (max-width: 765px) {
+            padding-bottom: 36px;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding-bottom: 26px;
+        }
     }
 
 
