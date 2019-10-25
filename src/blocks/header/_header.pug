@@ -9,8 +9,7 @@ mixin header
                     .col-lg-8.offset-lg-2
                         .header__form-wrapper
                             form.header__form.d-flex(action="")
-                                //- label.header__label.header__label--input Search Your Travel Destination
-                                input.header__input.flex-grow-1(type="text" id="destination" required)
+                                input.header__input.flex-grow-1(type="text" id="destination" name="your destination" placeholder="Search Your Travel Destination" required minlength="2")
                                 label.header__label.header__label--submit
                                     svg.icons.icons--header
                                         use(xlink:href="#icon-search")

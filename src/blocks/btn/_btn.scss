@@ -11,9 +11,9 @@
 
     &--header {
         padding-top: 19px;
-        padding-bottom: 18px;
+        padding-bottom: 19px;
         padding-right: 50px;
-        padding-left: 32px;
+        padding-left: 33px;
         border: none;
         letter-spacing: -0.3px;
 
@@ -23,9 +23,15 @@
 
     }
 
-    &--about:hover {
-        background-color: #ff6363;
+    &--about {
+        padding: 23px 38px;
+        line-height: 19px;
+    
+        &:hover {
+            background-color: #ff6363;
+        }
     }
+    
 
     &--section-one {
         padding: 22px 62px;
