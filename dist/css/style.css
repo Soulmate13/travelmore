@@ -3477,6 +3477,18 @@ body {
     padding-top: 267px;
     padding-bottom: 48px;
     text-align: center; }
+    @media screen and (max-width: 991px) {
+      .header__top {
+        padding-top: 180px;
+        padding-bottom: 30px; } }
+    @media screen and (max-width: 765px) {
+      .header__top {
+        padding-top: 120px;
+        padding-bottom: 20px; } }
+    @media screen and (max-width: 575px) {
+      .header__top {
+        padding-top: 40px;
+        padding-bottom: 20px; } }
   .header__title {
     font-size: 48px;
     font-weight: 700;
@@ -3550,6 +3562,15 @@ body {
     color: white;
     pointer-events: none;
     margin-bottom: 134px; }
+    @media screen and (max-width: 991px) {
+      .header__link {
+        margin-bottom: 104px; } }
+    @media screen and (max-width: 765px) {
+      .header__link {
+        margin-bottom: 84px; } }
+    @media screen and (max-width: 575px) {
+      .header__link {
+        margin-bottom: 44px; } }
   .header__scroll-text {
     font-size: 14px;
     font-weight: 400;
