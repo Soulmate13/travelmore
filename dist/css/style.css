@@ -3549,7 +3549,7 @@ body {
     text-decoration: none;
     color: white;
     pointer-events: none;
-    margin-bottom: 127px; }
+    margin-bottom: 134px; }
   .header__scroll-text {
     font-size: 14px;
     font-weight: 400;
@@ -3576,6 +3576,10 @@ body {
     color: white;
     width: 1.5em;
     height: 1.5em; }
+  .icons--scroll {
+    color: white;
+    width: 1em;
+    height: 1em; }
   .icons--nav {
     color: white;
     width: 25px;
