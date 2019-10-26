@@ -41,11 +41,19 @@
         max-width: 160px;
         width: 100%;
         max-width: 167px;
+
+        @media screen and (max-width: 575px) {
+            max-width: 400px;
+        }
     }
 
     &__icons-link {
         text-decoration: none;
         color: #e8e8e8;
+
+        @media screen and (max-width: 575px) {
+            font-size: 30px;
+        }
     }
 
     &__icons-link:first-child:hover {
@@ -73,7 +81,6 @@
     }
 
     &__link {
-
         margin-bottom: 16px;
 
         &:hover> .footer__logo {

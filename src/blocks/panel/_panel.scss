@@ -4,7 +4,6 @@
     // background-position: top;
     // background-repeat: no-repeat;
 
-
     &__item {
         padding-top: 95px;
 
@@ -44,8 +43,7 @@
         font-weight: 400;
         padding-bottom: 112px;
         pointer-events: none;
-
-        
+    
         @media screen and (max-width: 991px) {
             padding-bottom: 56px;
         }

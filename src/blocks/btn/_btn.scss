@@ -26,31 +26,102 @@
     &--about {
         padding: 23px 38px;
         line-height: 19px;
+        position: relative;
+        z-index: 999;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url(/dist/img/button-piece.png);
+            z-index: 0;
+            width: 109px;
+            height: 60px;
+            background-repeat: no-repeat;
+            top: 1;
+
+        }
+        
+        &:hover::before {
+            display: none;
+        }
     
         &:hover {
             background-color: #ff6363;
         }
 
     }
-    
 
+    &--about > span {
+        position: relative;
+        z-index: 999;
+    }
+    
     &--section-one {
         padding: 22px 62px;
         letter-spacing: 0.7px;
         line-height: 19px;
+        position: relative;
+        z-index: 999;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url(/dist/img/button-piece.png);
+            z-index: 0;
+            width: 109px;
+            height: 60px;
+            background-repeat: no-repeat;
+            top: 0;
+
+        }
+        
+        &:hover::before {
+            display: none;
+        }
 
         &:hover {
             background-color: #ff6363;
         }
+    }
+
+    &--section-one > span {
+        position: relative;
+        z-index: 999;
     }
 
     &--section-two {
         padding: 22px 62px;
         letter-spacing: 0.7px;
         line-height: 19px;
+        position: relative;
+        z-index: 999;
 
         &:hover {
             background-color: #ff6363;
         }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-image: url(/dist/img/button-piece.png);
+            z-index: 0;
+            width: 109px;
+            height: 60px;
+            background-repeat: no-repeat;
+            top: 0;
+
+        }
+        
+        &:hover::before {
+            display: none;
+        }
+    }
+    
+    &--section-two > span {
+        position: relative;
+        z-index: 999;
     }
 }

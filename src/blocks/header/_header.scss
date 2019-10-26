@@ -19,12 +19,20 @@
         text-transform: uppercase;
         letter-spacing: 2.9px;
         margin-bottom: 6px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 35px;
+        }
     }
 
     &__subtitle {
         font-size: 22px;
         font-weight: 400;
         letter-spacing: 5.1px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 16px;
+        }
     }
 
     &__form-wrapper {
@@ -35,6 +43,10 @@
         border: solid white 2px;
         margin-bottom: 94px;
         margin-left: 39px;
+
+        @media screen and (max-width: 991px) {
+            margin-left: 0;
+        }
     }
 
     &__form {
@@ -49,7 +61,26 @@
         top: 20px;
         right: 70px;
         pointer-events: none;
-       
+
+        @media screen and (max-width: 1199px) {
+            top: 20px;
+            right: 110px;
+        }
+
+        @media screen and (max-width: 991px) {
+            top: 20px;
+            right: 70px;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .icons--header {
+            position: absolute;
+            top: 18px;
+            right: 48px;
+            pointer-events: none;
+        }
     }
 
     &__input {
@@ -60,6 +91,17 @@
         font-weight: 400;
         padding: 21px 125px;
         letter-spacing: 1.8px;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            padding: 10px 20px;
+            letter-spacing: 0;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 5px 10px;
+            letter-spacing: 0;
+        }
 
     }
 
