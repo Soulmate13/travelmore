@@ -3262,7 +3262,7 @@ body {
       border: none; } }
 
 .about {
-  background-image: url(/dist/img/about-background.png);
+  background-image: url(../../dist/img/about-background.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat; }
@@ -3467,7 +3467,7 @@ body {
       display: block; }
 
 .header {
-  background-image: url(/dist/img/header-background.png);
+  background-image: url(../../dist/img/header-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3747,7 +3747,7 @@ body {
         padding-bottom: 26px; } }
 
 .section-one {
-  background-image: url(/dist/img/section-1-background.png);
+  background-image: url(../../dist/img/section-1-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3798,7 +3798,7 @@ body {
     line-height: 26px; }
 
 .section-two {
-  background-image: url(/dist/img/section-2-background.png);
+  background-image: url(../../dist/img/section-2-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3849,7 +3849,7 @@ body {
     line-height: 26px; }
 
 .testimonials {
-  background-image: url(/dist/img/testimonials-background.png);
+  background-image: url(../../dist/img/testimonials-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
