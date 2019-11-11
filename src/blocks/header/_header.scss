@@ -1,5 +1,5 @@
 .header {
-    background-image: url(/dist/img/header-background.png);
+    background-image: url(../../dist/img/header-background.png);
     background-position: top;
     // background-image: url(/dist/img/header-background-full.png);
     background-repeat: no-repeat;
@@ -11,6 +11,21 @@
         padding-top: 267px;
         padding-bottom: 48px;
         text-align: center;
+
+        @media screen and (max-width: 991px) {
+            padding-top: 180px;
+            padding-bottom: 30px;
+        }
+    
+        @media screen and (max-width: 765px) {
+            padding-top: 120px;
+            padding-bottom: 20px;
+        }
+    
+        @media screen and (max-width: 575px) {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
     }
 
     &__title {
@@ -19,12 +34,20 @@
         text-transform: uppercase;
         letter-spacing: 2.9px;
         margin-bottom: 6px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 35px;
+        }
     }
 
     &__subtitle {
         font-size: 22px;
         font-weight: 400;
         letter-spacing: 5.1px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 16px;
+        }
     }
 
     &__form-wrapper {
@@ -35,6 +58,10 @@
         border: solid white 2px;
         margin-bottom: 94px;
         margin-left: 39px;
+
+        @media screen and (max-width: 991px) {
+            margin-left: 0;
+        }
     }
 
     &__form {
@@ -49,7 +76,26 @@
         top: 20px;
         right: 70px;
         pointer-events: none;
-       
+
+        @media screen and (max-width: 1199px) {
+            top: 20px;
+            right: 110px;
+        }
+
+        @media screen and (max-width: 991px) {
+            top: 20px;
+            right: 70px;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .icons--header {
+            position: absolute;
+            top: 18px;
+            right: 48px;
+            pointer-events: none;
+        }
     }
 
     &__input {
@@ -60,6 +106,17 @@
         font-weight: 400;
         padding: 21px 125px;
         letter-spacing: 1.8px;
+        width: 100%;
+
+        @media screen and (max-width: 767px) {
+            padding: 10px 20px;
+            letter-spacing: 0;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 5px 10px;
+            letter-spacing: 0;
+        }
 
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             color: #999;
@@ -72,7 +129,19 @@
         text-decoration: none;
         color: white;
         pointer-events: none;
-        margin-bottom: 127px;
+        margin-bottom: 134px;
+
+        @media screen and (max-width: 991px) {
+            margin-bottom: 104px;
+        }
+    
+        @media screen and (max-width: 765px) {
+            margin-bottom: 84px;
+        }
+    
+        @media screen and (max-width: 575px) {
+            margin-bottom: 44px;
+        }
     }
 
     &__scroll-text {

@@ -7,7 +7,11 @@ mixin nav
                         a.nav__link(href="#")
                             img.nav__logo(src="../../dist/img/logo.png" alt="bhromaon white logo")
                             img.nav__logo--alt(src="../../dist/img/logo-grey.png" alt="bhromaon grey logo")
-                        ul.nav__list.d-flex.justify-content-between.align-items-center
+                        input.nav__checkbox(type='checkbox' id='burger')
+                        label.nav__burger(for='burger')
+                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-times"></i>
+                        ul.nav__list.d-flex.justify-content-lg-between.justify-content-md-around.align-items-center
                             li.nav__item
                                 a.nav__item-link(href='#about') Who We Are
                             li.nav__item

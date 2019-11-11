@@ -6,7 +6,9 @@
     // background-repeat: no-repeat;
 
     &__link {
-
+        position: relative;
+        z-index: 3;
+        
         &:hover> .nav__logo {
             display: none;
         }
@@ -23,46 +25,102 @@
     &__wrapper {
         padding-top: 27px;
         padding-bottom: 31px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+
+        &:checked+.nav__burger>.fa-bars {
+            display: none;    
+        }
+
+        &:checked+.nav__burger>.fa-times {
+            display: block;
+        }   
+    }
+
+    &__checkbox:checked+&__burger+&__list {
+        max-height: 400px;
+    }
+
+    &__burger {
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 17px;
+        z-index: 2;
+        font-size: 42px;
+
+        & > .fa-times {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
     }
 
     &__list {
         list-style: none;
-        max-width: 525px;
         width: 100%;
         padding-top: 6px;
 
-        @media screen and (max-width: 991px) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            max-width: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            background-color:blueviolet;
-            max-height: 0;
-            overflow: hidden;
-            transition: ease .3s;
-            z-index: 1;
-            text-align: center;
-            margin-top: 0;
-            padding-top: 0;   
+        @media screen and (min-width: 769px) {
+            max-width: 525px;
         }
     }
+
+    @media screen and (max-width: 767px) {
+     .nav__list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color:#5474fd;
+        max-height: 0;
+        overflow: hidden;
+        transition: ease .3s;
+        z-index: 1;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+}    
 
     &__item {
         font-family: 'Aleo', serif;
         font-size: 14px;
         font-weight: 400;
         text-transform: uppercase;
+
+        @media screen and (max-width: 767px) {
+            padding: 10px 0px;
+
+            &:first-child {
+                padding-top: 60px;
+                }
+        }
+
     }
 
     &__item-link {
         text-decoration: none;
         color: white;
 
-        &:hover {
+        @media screen and (min-width: 769px) {
+            &:hover {
             text-decoration: underline;
+            }
         }
     }
 }

@@ -6,16 +6,20 @@ mixin header
                         .header__top
                             h1.header__title Bhromaon
                             p.header__subtitle Safe Travel Anywhere
-                    .col-lg-8.offset-lg-2.col-md-12
+                    .col-xl-8.offset-xl-2.col-lg-10.offset-lg-1.col-md-12.offset-md-0.col-sm-12.offset-sm-0.col-12.offset-0
                         .header__form-wrapper
                             form.header__form.d-flex(action="")
                                 input.header__input.flex-grow-1(type="text" id="destination" name="your destination" placeholder="Search Your Travel Destination" required minlength="2")
-                                label.header__label.header__label--submit
-                                    svg.icons.icons--header
+                                label.header__label.header__label--submit.d-md-block.d-none
+                                    svg.icons.icons--header.d-md-block.d-none
                                         use(xlink:href="#icon-search")
-                                    input.header__input-submit.btn.btn--header(type="submit" value="SEARCH")
+                                    input.header__input-submit.btn.btn--header.d-md-block.d-none(type="submit" value="SEARCH")
+                                label.header__label.header__label--submit.label--submit-small.d-xl-none.d-lg-none.d-md-none.d-block
+                                svg.icons.icons--header.d-xl-none.d-lg-none.d-md-none.d-block
+                                    use(xlink:href="#icon-search")
+                                input.header__input-submit.btn.btn--header.d-xl-none.d-lg-none.d-md-none.d-block(type="submit" value="")
                     .col-12
                         a.header__link.d-flex.flex-column(href="#nav")
                             p.header__scroll-text.align-self-center Scroll down
-                            svg.icons.icons--header.header__icon.align-self-center
+                            svg.icons.icons--scroll.header__icon.align-self-center
                                 use(xlink:href="#icon-angle-down")

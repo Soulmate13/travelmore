@@ -42,22 +42,27 @@
                 <p class="header__subtitle">Safe Travel Anywhere</p>
               </div>
             </div>
-            <div class="col-lg-8 offset-lg-2 col-md-12">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 offset-md-0 col-sm-12 offset-sm-0 col-12 offset-0">
               <div class="header__form-wrapper">
                 <form class="header__form d-flex" action="">
                   <input class="header__input flex-grow-1" type="text" id="destination" name="your destination" placeholder="Search Your Travel Destination" required="required" minlength="2"/>
-                  <label class="header__label header__label--submit">
-                    <svg class="icons icons--header">
+                  <label class="header__label header__label--submit d-md-block d-none">
+                    <svg class="icons icons--header d-md-block d-none">
                       <use xlink:href="#icon-search"></use>
                     </svg>
-                    <input class="header__input-submit btn btn--header" type="submit" value="SEARCH"/>
+                    <input class="header__input-submit btn btn--header d-md-block d-none" type="submit" value="SEARCH"/>
                   </label>
+                  <label class="header__label header__label--submit label--submit-small d-xl-none d-lg-none d-md-none d-block"></label>
+                  <svg class="icons icons--header d-xl-none d-lg-none d-md-none d-block">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                  <input class="header__input-submit btn btn--header d-xl-none d-lg-none d-md-none d-block" type="submit" value=""/>
                 </form>
               </div>
             </div>
             <div class="col-12"><a class="header__link d-flex flex-column" href="#nav">
                 <p class="header__scroll-text align-self-center">Scroll down</p>
-                <svg class="icons icons--header header__icon align-self-center">
+                <svg class="icons icons--scroll header__icon align-self-center">
                   <use xlink:href="#icon-angle-down"></use>
                 </svg></a></div>
           </div>
@@ -68,7 +73,11 @@
           <div class="row">
             <div class="col-12">
               <div class="nav__wrapper d-flex justify-content-between"><a class="nav__link" href="#"><img class="nav__logo" src="../../dist/img/logo.png" alt="bhromaon white logo"/><img class="nav__logo--alt" src="../../dist/img/logo-grey.png" alt="bhromaon grey logo"/></a>
-                <ul class="nav__list d-flex justify-content-between align-items-center">
+                <input class="nav__checkbox" type="checkbox" id="burger"/>
+                <label class="nav__burger" for="burger"><i class="fas fa-bars"></i>
+<i class="fas fa-times"></i>
+                </label>
+                <ul class="nav__list d-flex justify-content-lg-between justify-content-md-around align-items-center">
                   <li class="nav__item"><a class="nav__item-link" href="#about">Who We Are</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="#panel">What We Do</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="#section-one">Travel With Us</a></li>
@@ -84,15 +93,17 @@
           <div class="about__wrapper">
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-12">
-                <h2 class="about__title">Why Choose Us</h2>
-                <div class="about__text">
-                  <p class="about__paragraph">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
-                  <p class="about__paragraph">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-                </div><a class="btn btn--about about__btn" href="javascript:void(0)">EXPLORE PLACES</a>
+                <div class="about__inner">
+                  <h2 class="about__title">Why Choose Us</h2>
+                  <div class="about__text">
+                    <p class="about__paragraph">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
+                    <p class="about__paragraph">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+                  </div><a class="btn btn--about about__btn" href="javascript:void(0)"> <span class="about__btn-text">EXPLORE PLACES</span></a>
+                </div>
               </div>
               <div class="col-lg-6 col-md-6 no-gutters col-sm-12">
-                <div class="col-xl-8 offset-xl-1 mb-xl-1 col-lg-10 offset-lg-1 mb-lg-2 mb-md-5 mt-sm-5 mb-sm-3 mt-5 mb-3 no-gutters"><img class="about__image about__image--top" src="/dist/img/about-1.png" alt="image of a house on a river"/></div>
-                <div class="col-xl-8 offset-xl-4 pt-xl-0 pt-lg-0 col-lg-10 offset-lg-1 pt-md-5 no-gutters"><img class="about__image about__image--bottom" src="/dist/img/about-2.png" alt="image of the mountain cliff"/></div>
+                <div class="col-xl-8 offset-xl-1 mb-xl-1 mt-xl-0 mt-lg-0 col-lg-10 offset-lg-1 mb-lg-2 mb-md-4 mt-sm-5 mb-sm-3 mt-5 mb-3 no-gutters"><img class="about__image about__image--top" src="/dist/img/about-1.png" alt="image of a house on a river"/></div>
+                <div class="col-xl-8 offset-xl-4 pt-xl-0 pt-lg-0 col-lg-10 offset-lg-1 pt-md-4 no-gutters"><img class="about__image about__image--bottom" src="/dist/img/about-2.png" alt="image of the mountain cliff"/></div>
               </div>
             </div>
           </div>
@@ -141,7 +152,7 @@
               <div class="section-one__item">
                 <h3 class="section-one__title">Spain</h3>
                 <h2 class="section-one__subtitle">Grand Spain Madrid</h2>
-                <p class="section-one__paragraph">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p><a class="btn btn--section-one section-one__btn" href="javascript:void(0)">BOOK NOW</a>
+                <p class="section-one__paragraph">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p><a class="btn btn--section-one section-one__btn" href="javascript:void(0)"> <span class="section-one__btn-text">BOOK NOW</span></a>
               </div>
             </div>
           </div>
@@ -154,7 +165,7 @@
               <div class="section-two__item">
                 <h3 class="section-two__title">Spain</h3>
                 <h2 class="section-two__subtitle">Grand Spain Madrid</h2>
-                <p class="section-two__paragraph">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p><a class="btn btn--section-two section-two__btn" href="javascript:void(0)">BOOK NOW</a>
+                <p class="section-two__paragraph">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p><a class="btn btn--section-two section-two__btn" href="javascript:void(0)"> <span class="section-two__btn-text">BOOK NOW</span></a>
               </div>
             </div>
           </div>

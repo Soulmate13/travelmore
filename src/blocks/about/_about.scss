@@ -1,5 +1,5 @@
 .about {
-    background-image: url(/dist/img/about-background.png);
+    background-image: url(../../dist/img/about-background.png);
     background-size: cover;
     // background-image: url(/dist/img/about-background-full.png);
     background-position: top;
@@ -20,9 +20,13 @@
         }
     
         @media screen and (max-width: 575px) {
-            padding-top: 20px;
+            padding-top: 95px;
             padding-bottom: 20px;
         }
+    }
+
+    &__inner {
+        position: relative;
     }
 
     &__title {

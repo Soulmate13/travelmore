@@ -1,5 +1,5 @@
 .testimonials {
-    background-image: url(/dist/img/testimonials-background.png);
+    background-image: url(../../dist/img/testimonials-background.png);
     // background-image: url(/dist/img/testimonials-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
@@ -68,7 +68,6 @@
 
     }
 
-
     &__text-heading {
         color: #fefefe;
         font-size: 20px; 
@@ -97,7 +96,6 @@
         float: left;
         padding-left: 1px;
         font-size: 18px;
-}     
+    }     
     
-
 }

@@ -1,5 +1,5 @@
 .section-two {
-    background-image: url(/dist/img/section-2-background.png);
+    background-image: url(../../dist/img/section-2-background.png);
     // background-image: url(/dist/img/section-2-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
@@ -23,8 +23,7 @@
     }
 
     &__item {
-        opacity: 0.9;
-        background-color: #232323;
+        background-color: rgba($color: #232323, $alpha: 0.9);
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
         padding-bottom: 69px;
@@ -36,7 +35,7 @@
         }
 
         &:hover {
-            opacity: 1;
+            background-color: rgba($color: #232323, $alpha: 1.0);
             transition: ease .3s;
         }
     }
