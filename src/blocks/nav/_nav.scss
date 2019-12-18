@@ -28,6 +28,7 @@
 
         @media screen and (max-width: 767px) {
             width: 100%;
+            max-width: 100%;
         }
     }
 
@@ -62,7 +63,7 @@
             display: none;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 577px) {
             display: none;
         }
     }
@@ -71,13 +72,14 @@
         list-style: none;
         width: 100%;
         padding-top: 6px;
+        text-align: center;
 
         @media screen and (min-width: 769px) {
             max-width: 525px;
         }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 575px) {
      .nav__list {
         position: absolute;
         top: 0;
@@ -103,7 +105,7 @@
         font-weight: 400;
         text-transform: uppercase;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 577px) {
             padding: 10px 0px;
 
             &:first-child {
