@@ -1,6 +1,4 @@
 .testimonials {
-    background-image: url(../../dist/img/testimonials-background.png);
-    // background-image: url(/dist/img/testimonials-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,4 +96,16 @@
         font-size: 18px;
     }     
     
+}
+
+.no-webp .testimonials {
+    background-image: url(../img/testimonials-background.png);
+}
+
+.webp .testimonials {
+    background-image: url(../webp/testimonials-background.webp);
+}
+
+img {
+    max-width: 100%;
 }

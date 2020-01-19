@@ -3262,7 +3262,6 @@ body {
       border: none; } }
 
 .about {
-  background-image: url(../../dist/img/about-background.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat; }
@@ -3321,6 +3320,15 @@ body {
       .about__image--top {
         margin-left: 0; } }
 
+.no-webp .about {
+  background-image: url(../img/about-background.png); }
+
+.webp .about {
+  background-image: url(../webp/about-background.webp); }
+
+img {
+  max-width: 100%; }
+
 .btn {
   color: white;
   text-decoration: none;
@@ -3349,7 +3357,7 @@ body {
       content: "";
       display: block;
       position: absolute;
-      background-image: url(/dist/img/button-piece.png);
+      background-image: url(../img/button-piece.png);
       z-index: 0;
       width: 109px;
       height: 60px;
@@ -3372,7 +3380,7 @@ body {
       content: "";
       display: block;
       position: absolute;
-      background-image: url(/dist/img/button-piece.png);
+      background-image: url(../img/button-piece.png);
       z-index: 0;
       width: 109px;
       height: 60px;
@@ -3397,7 +3405,7 @@ body {
       content: "";
       display: block;
       position: absolute;
-      background-image: url(/dist/img/button-piece.png);
+      background-image: url(../img/button-piece.png);
       z-index: 0;
       width: 109px;
       height: 60px;
@@ -3467,7 +3475,6 @@ body {
       display: block; }
 
 .header {
-  background-image: url(../../dist/img/header-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3589,6 +3596,12 @@ body {
     text-decoration: underline; }
   .header__link:hover > .header__icon {
     padding-top: 5px; }
+
+.no-webp .header {
+  background-image: url(../img/header-background.png); }
+
+.webp .header {
+  background-image: url(../webp/header-background.webp); }
 
 .icons {
   display: inline-block;
@@ -3713,7 +3726,8 @@ body {
 .panel {
   background-color: #333333; }
   .panel__item {
-    padding-top: 95px; }
+    padding-top: 95px;
+    position: relative; }
     @media screen and (max-width: 991px) {
       .panel__item {
         padding-top: 40px; } }
@@ -3749,7 +3763,6 @@ body {
         padding-bottom: 26px; } }
 
 .section-one {
-  background-image: url(../../dist/img/section-1-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3799,8 +3812,13 @@ body {
     letter-spacing: -1px;
     line-height: 26px; }
 
+.no-webp .section-one {
+  background-image: url(../img/section-one-background.png); }
+
+.webp .section-one {
+  background-image: url(../webp/section-one-background.webp); }
+
 .section-two {
-  background-image: url(../../dist/img/section-2-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3850,8 +3868,13 @@ body {
     letter-spacing: -1px;
     line-height: 26px; }
 
+.no-webp .section-two {
+  background-image: url(../img/section-two-background.png); }
+
+.webp .section-two {
+  background-image: url(../webp/section-two-background.webp); }
+
 .testimonials {
-  background-image: url(../../dist/img/testimonials-background.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3925,3 +3948,12 @@ body {
     float: left;
     padding-left: 1px;
     font-size: 18px; }
+
+.no-webp .testimonials {
+  background-image: url(../img/testimonials-background.png); }
+
+.webp .testimonials {
+  background-image: url(../webp/testimonials-background.webp); }
+
+img {
+  max-width: 100%; }

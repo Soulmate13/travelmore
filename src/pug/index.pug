@@ -9,6 +9,7 @@ include ../blocks/section-two/_section-two.pug
 include ../blocks/testimonials/_testimonials.pug
 include ../blocks/footer/_footer.pug
 include ../blocks/btn/_btn.pug
+include ../blocks/picture/_picture.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -21,15 +22,11 @@ html(lang="en")
         link(rel="stylesheet", href="./css/style.css")
     body
         +page
-            //- +nav
-            //- +about
-            //- +panel
-            //- +section-one
-            //- +section-two
-            //- +testimonials
-            //- +footer
+
 
         
     script(src='https://kit.fontawesome.com/f811e9d5c2.js' crossorigin='anonymous')
     script(src="https://code.jquery.com/jquery-3.4.1.min.js")
     script(src="./plugins/jquery.mask.min.js")
+    script(src="./script/modernizr-custom.js")
+    script(src="./plugins/lazysizes.min.js" async="")

@@ -1,6 +1,4 @@
 .section-one {
-    background-image: url(../../dist/img/section-1-background.png);
-    // background-image: url(/dist/img/section-1-background-full.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,4 +60,12 @@
         line-height: 26px;
         
     }
+}
+
+.no-webp .section-one {
+    background-image: url(../img/section-one-background.png);
+}
+
+.webp .section-one {
+    background-image: url(../webp/section-one-background.webp);
 }

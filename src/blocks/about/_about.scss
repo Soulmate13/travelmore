@@ -1,5 +1,4 @@
 .about {
-    background-image: url(../../dist/img/about-background.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -82,4 +81,16 @@
             margin-left: 0;
         }
     }
+}
+
+.no-webp .about {
+    background-image: url(../img/about-background.png);
+}
+
+.webp .about {
+    background-image: url(../webp/about-background.webp);
+}
+
+img {
+    max-width: 100%;
 }

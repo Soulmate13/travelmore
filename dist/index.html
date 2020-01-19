@@ -102,8 +102,18 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 no-gutters col-sm-12">
-                <div class="col-xl-8 offset-xl-1 mb-xl-1 mt-xl-0 mt-lg-0 col-lg-10 offset-lg-1 mb-lg-2 mb-md-4 mt-sm-5 mb-sm-3 mt-5 mb-3 no-gutters"><img class="about__image about__image--top" src="../dist/img/about-1.png" alt="image of a house on a river"/></div>
-                <div class="col-xl-8 offset-xl-4 pt-xl-0 pt-lg-0 col-lg-10 offset-lg-1 pt-md-4 no-gutters"><img class="about__image about__image--bottom" src="../dist/img/about-2.png" alt="image of the mountain cliff"/></div>
+                <div class="col-xl-8 offset-xl-1 mb-xl-1 mt-xl-0 mt-lg-0 col-lg-10 offset-lg-1 mb-lg-2 mb-md-4 mt-sm-5 mb-sm-3 mt-5 mb-3 no-gutters">
+                  <picture class="about__image about__image--top">
+                    <source data-srcset="./webp/about-1@x1.webp 1x, ./webp/about-1@x2.webp 2x, ./webp/about-1@x3.webp 3x" type="image/webp"/>
+                    <source data-srcset="./img/about-1@x1.png 1x, ./img/about-1@x2.png 2x, ./img/about-1@x2.png 3x" type="image/png"/><img class="lazyload" data-src="./img/about-1@x1.png" alt="image of a house on a river"/>
+                  </picture>
+                </div>
+                <div class="col-xl-8 offset-xl-4 pt-xl-0 pt-lg-0 col-lg-10 offset-lg-1 pt-md-4 no-gutters">
+                  <picture class="about__image about__image--bottom">
+                    <source data-srcset="./webp/about-2@x1.webp 1x, ./webp/about-2@x2.webp 2x, ./webp/about-2@x3.webp 3x" type="image/webp"/>
+                    <source data-srcset="./img/about-2@x1.png 1x, ./img/about-2@x2.png 2x, ./img/about-2@x2.png 3x" type="image/png"/><img class="lazyload" data-src="./img/about-2@x1.png" alt="image of the mountain cliff"/>
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -179,7 +189,12 @@
             </div>
           </div>
           <div class="row no-gutters">
-            <div class="col-xl-5 col-lg-6 offset-lg-3 offset-xl-0 mb-xl-0 mb-md-3 col-md-10 offset-md-1 col-sm-12 mb-sm-4 col-12 mb-3"><img class="testimonials__img" src="../dist/img/testimonials-1.png" alt="man in the mountines"/></div>
+            <div class="col-xl-5 col-lg-6 offset-lg-3 offset-xl-0 mb-xl-0 mb-md-3 col-md-10 offset-md-1 col-sm-12 mb-sm-4 col-12 mb-3">
+              <picture class="testimonials__img">
+                <source data-srcset="./webp/testimonials-1@x1.webp 1x, ./webp/testimonials-1@x2.webp 2x, ./webp/testimonials-1@x3.webp 3x" type="image/webp"/>
+                <source data-srcset="./img/testimonials-1@x1.png 1x, ./img/testimonials-1@x2.png 2x, ./img/testimonials-1@x2.png 3x" type="image/png"/><img class="lazyload" data-src="./img/testimonials-1@x1.png" alt="man in the mountines"/>
+              </picture>
+            </div>
             <div class="col-xl-7 d-none d-xl-block">
               <div class="testimonials__text d-flex flex-column">
                 <h3 class="testimonials__text-heading">Sam Sumon</h3><i class="fas fa-quote-left"> </i>
@@ -215,4 +230,6 @@
   <script src="https://kit.fontawesome.com/f811e9d5c2.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./plugins/jquery.mask.min.js"></script>
+  <script src="./script/modernizr-custom.js"></script>
+  <script src="./plugins/lazysizes.min.js" async=""></script>
 </html>

@@ -1,11 +1,9 @@
 .panel {
     background-color: #333333;
-    // background-image: url(/dist/img/panel-background-full.png);
-    // background-position: top;
-    // background-repeat: no-repeat;
 
     &__item {
         padding-top: 95px;
+        position: relative;
 
         @media screen and (max-width: 991px) {
             padding-top: 40px;

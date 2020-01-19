@@ -13,9 +13,10 @@ mixin about
                                 span.about__btn-text EXPLORE PLACES
                     .col-lg-6.col-md-6.no-gutters.col-sm-12
                         .col-xl-8.offset-xl-1.mb-xl-1.mt-xl-0.mt-lg-0.col-lg-10.offset-lg-1.mb-lg-2.mb-md-4.mt-sm-5.mb-sm-3.mt-5.mb-3.no-gutters
-                            img.about__image.about__image--top(src="../dist/img/about-1.png", alt="image of a house on a river")
+                            +picture("about-1","png","image of a house on a river").about__image.about__image--top
                         .col-xl-8.offset-xl-4.pt-xl-0.pt-lg-0.col-lg-10.offset-lg-1.pt-md-4.no-gutters
-                            img.about__image.about__image--bottom(src="../dist/img/about-2.png", alt="image of the mountain cliff")
+                            +picture("about-2","png","image of the mountain cliff").about__image.about__image--bottom
+
 
 
                 

@@ -1,7 +1,5 @@
 .header {
-    background-image: url(../../dist/img/header-background.png);
     background-position: top;
-    // background-image: url(/dist/img/header-background-full.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Josefin Sans', sans-serif;
@@ -166,4 +164,12 @@
         padding-top: 5px;
     }
 
+}
+
+.no-webp .header {
+    background-image: url(../img/header-background.png);
+}
+
+.webp .header {
+    background-image: url(../webp/header-background.webp);
 }
