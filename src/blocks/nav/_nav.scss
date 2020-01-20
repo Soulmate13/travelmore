@@ -20,8 +20,7 @@
     }
 
     &__wrapper {
-        padding-top: 27px;
-        padding-bottom: 31px;
+        height: 80px;
 
         @media screen and (max-width: 767px) {
             width: 100%;
@@ -68,15 +67,16 @@
     &__list {
         list-style: none;
         width: 100%;
-        padding-top: 6px;
+        padding-top: 7px;
         text-align: center;
 
         @media screen and (min-width: 769px) {
             max-width: 525px;
+            margin-top: -5px;
         }
     }
 
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 576px) {
      .nav__list {
         position: absolute;
         top: 0;
@@ -102,7 +102,7 @@
         font-weight: 400;
         text-transform: uppercase;
 
-        @media screen and (max-width: 577px) {
+        @media screen and (max-width: 576px) {
             padding: 10px 0px;
 
             &:first-child {

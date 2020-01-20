@@ -14,8 +14,9 @@
 
     &--scroll {
         color: white;
-        width: 1em;
-        height: 1em;
+        width: 2em;
+        height: 2em;
+        margin-top: -6px;
     }
 
     &--nav {
@@ -27,10 +28,31 @@
     &--panel {
         width: 72px;
         height: 72px;
+        position: relative;
+        z-index: 2;
+        background: #333;
 
         &:hover {
             fill: white;
             fill-opacity: 1;
+        }
+    }
+
+    &--shape {
+        display: inline-block;
+        width: 1em;
+        height: 96px;
+        width: 872px;
+        stroke: rgba($color: #fff, $alpha: 0.2);
+        stroke-dasharray: 2;
+        fill: transparent;
+        position: absolute;
+        top: 50px;
+        left: 131px;
+        z-index: 1;
+
+        @media screen and (max-width: 1199px) {
+            display: none;
         }
     }
 

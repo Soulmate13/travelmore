@@ -7,7 +7,7 @@
 
     &__top {
         padding-top: 267px;
-        padding-bottom: 48px;
+        padding-bottom: 51px;
         text-align: center;
 
         @media screen and (max-width: 991px) {
@@ -127,7 +127,7 @@
         text-decoration: none;
         color: white;
         pointer-events: none;
-        margin-bottom: 134px;
+        margin-bottom: 120px;
 
         @media screen and (max-width: 991px) {
             margin-bottom: 104px;
@@ -146,10 +146,11 @@
         font-size: 14px;
         font-weight: 400;
         pointer-events: all;
-        padding-top: 29px;
+        padding-top: 28px;
         letter-spacing: 2px;
         text-transform: capitalize;
-        padding-bottom: 2px;
+        padding-bottom: 6px;
+        margin-left: 4px;
     }
 
     &__icon {

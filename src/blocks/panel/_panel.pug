@@ -2,7 +2,9 @@ mixin panel
     .panel#panel
         .container
             .row
-                .col-lg-4.col-md-6.col-sm-12                  
+                .col-lg-4.col-md-6.col-sm-12
+                    svg.icons--shape
+                        use(xlink:href="#icon-shape")        
                     .panel__item.d-flex.flex-column.align-items-center
                         .panel__icon.panel__icon--search
                             svg.icons.icons--panel
